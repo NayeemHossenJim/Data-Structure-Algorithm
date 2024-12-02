@@ -16,11 +16,14 @@ vector<int> PairSum(vector<int>nums,int target)
         }
         else if (pairsum < target)
         {
-            /* code */
+            i++;
         }
-        
+        else
+        {
+            ans.push_back(i);
+            ans.push_back(j);
+        }
     }
-    
     return ans ;
 }
 
